@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".addpatient">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="650dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/addpatientspinner"
+        app:layout_constraintEnd_toEndOf="@+id/addpatientspinner"
+        app:layout_constraintStart_toStartOf="@+id/addpatientspinner"
+        app:layout_constraintTop_toTopOf="@+id/addpatientspinner">
+
+    </FrameLayout>
+
+    <Spinner
+        android:id="@+id/addpatientspinner"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="600dp"
+        android:contentDescription="@string/addpatient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="name"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/dr_priya"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <EditText
+        android:id="@+id/ageinput"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="age"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/_20"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameinput" />
+
+    <EditText
+        android:id="@+id/genderinput"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="gender"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/female"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageinput" />
+
+    <EditText
+        android:id="@+id/phoneinput"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="00000-00000"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/_00000_00000"
+        android:inputType="phone"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderinput" />
+
+    <EditText
+        android:id="@+id/addressinput"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="1 Pushp Bunglows"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/_1_pushp_bunglows"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneinput" />
+
+    <EditText
+        android:id="@+id/diagnosisinput"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:autofillHints="1 Pushp Bunglows"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/past_history"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressinput" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/sumbitbutton"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/name_"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/nameinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/agename"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/age"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/ageinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametext" />
+
+    <TextView
+        android:id="@+id/gendertext"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/gender"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/genderinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agename" />
+
+    <TextView
+        android:id="@+id/diagnosistext"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="65dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/diagnosis"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/diagnosisinput"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addresstext" />
+
+    <TextView
+        android:id="@+id/addresstext"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/address"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/addressinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonetext" />
+
+    <TextView
+        android:id="@+id/phonetext"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/phone_number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/phoneinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gendertext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

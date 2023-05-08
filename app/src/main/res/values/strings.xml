@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Dr Priya\'s Physio</string>
+    <string name="logo">logo</string>
+    <string name="homespinner">homespinner</string>
+
+    <string-array name="homewheel">
+        <item>Home</item>
+        <item>Payment</item>
+        <item>Add Patient</item>
+        <item>Patient List</item>
+        <item>Appointments</item>
+        <item>Calendar</item>
+    </string-array>
+
+    <string-array name="paymentwheel">
+        <item>Payment</item>
+        <item>Home</item>
+        <item>Add Patient</item>
+        <item>Patient List</item>
+        <item>Appointments</item>
+        <item>Calendar</item>
+    </string-array>
+
+    <string-array name="addpatientwheel">
+    <item>Add Patient</item>
+    <item>Home</item>
+    <item>Payment</item>
+    <item>Patient List</item>
+    <item>Appointments</item>
+    <item>Calendar</item>
+</string-array>
+
+
+    <string name="title_activity_payment">payment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="paymentspinner">paymentspinner</string>
+    <string name="qr">qr</string>
+    <string name="addpatient">addpatient</string>
+    <string name="dr_priya">Dr. Priya</string>
+    <string name="_20">20</string>
+    <string name="female">Female</string>
+    <string name="_00000_00000">00000-00000</string>
+    <string name="_1_pushp_bunglows">1 Pushp Bunglows</string>
+    <string name="past_history">Past History</string>
+    <string name="sumbitbutton">sumbitbutton</string>
+    <string name="submit">SUBMIT</string>
+    <string name="name">name</string>
+    <string name="age">Age :</string>
+    <string name="gender">Gender :</string>
+    <string name="diagnosis">Diagnosis :</string>
+    <string name="address">Address :</string>
+    <string name="phone_number">Phone Number :</string>
+    <string name="name_">Name :</string>
+</resources>
